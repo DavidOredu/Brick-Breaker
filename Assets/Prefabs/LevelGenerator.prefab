@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &926726031631677146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 926726031631677148}
+  - component: {fileID: 926726031631677147}
+  m_Layer: 0
+  m_Name: LevelGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &926726031631677148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926726031631677146}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &926726031631677147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926726031631677146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a973722d4f4843e40b48284eb206b901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brickPrefabs:
+  - {fileID: 5103456701696673706, guid: c9e0d40d6569ba04cb2d488ab0f297ff, type: 3}
+  - {fileID: 5103456701696673706, guid: 3a98003f9c52c8542a81994537c8aa3e, type: 3}
+  - {fileID: 5103456701696673706, guid: c9bfdbc09a33c97419f4d1782151495d, type: 3}
+  rows: 7
+  cols: 15
+  spawnOffset: {x: 0, y: 6}
+  perlinOffset: {x: 40203.33, y: 353670.1}
+  perlinOffsetLimit: 9999999
+  perlinScale: 200
+  perlinThreshold: 0.25
+  smoothenCheckSize: 1
+  useSmoothing: 1
+  getRandomLevel: 1
+  brickSpacing: {x: 6, y: 4}
+  brickProbabilityData: {fileID: 11400000, guid: 862bc0673ccd7ed4bb32edd39f94b2bd, type: 2}
